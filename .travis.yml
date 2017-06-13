@@ -8,6 +8,7 @@ install:
   - pip install coverage
   
 script:
+  - git checkout $TRAVIS_BRANCH
   - echo "Teste Push File to Git Hub" > NewFile.txt
   
 after_success:
