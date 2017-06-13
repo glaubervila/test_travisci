@@ -20,6 +20,9 @@ after_success:
   
   - git branch
   
+  - echo $TRAVIS_BRANCH
+  - git checkout $TRAVIS_BRANCH
+  
   - git status
   - git add -A
   - git status  
